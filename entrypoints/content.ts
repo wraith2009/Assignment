@@ -26,18 +26,24 @@ export default defineContentScript({
         </div>
       </div>
     `;
-    
+
     console.log("Extension loaded");
     document.body.insertAdjacentHTML("beforeend", modalHtml);
     console.log("Modal added to the page");
 
     const modal = document.getElementById("custom-modal") as HTMLDivElement;
-    const modalContent = document.getElementById("modal-content") as HTMLDivElement;
-    const generateBtn = document.getElementById("generate-btn") as HTMLButtonElement;
-    const insertBtn = document.getElementById("insert-btn") as HTMLButtonElement;
+    const modalContent = document.getElementById(
+      "modal-content"
+    ) as HTMLDivElement;
+    const generateBtn = document.getElementById(
+      "generate-btn"
+    ) as HTMLButtonElement;
+    const insertBtn = document.getElementById(
+      "insert-btn"
+    ) as HTMLButtonElement;
     const inputText = document.getElementById("input-text") as HTMLInputElement;
     const messagesDiv = document.getElementById("messages") as HTMLDivElement;
-    console.log("modal  is:",modal)
+    console.log("modal  is:", modal);
     let lastGeneratedMessage = "";
     let parentElement: HTMLElement | null = null;
     let messageCount = 1;
@@ -57,7 +63,7 @@ export default defineContentScript({
         //   target.closest(".msg-form__contenteditable > p");
 
         parentElement = target;
-        console.log("parent element is:",parentElement)
+        console.log("parent element is:", parentElement);
         if (parentElement && !parentElement.querySelector(".edit-icon")) {
           console.log("Parent element found and no edit icon present");
 
@@ -166,7 +172,7 @@ export default defineContentScript({
         generateBtn.style.backgroundColor = "#007bff";
         generateBtn.style.color = "white";
         generateBtn.innerHTML = `<img src="${reGenIcon}" alt="Regenerate" style="vertical-align: middle; margin-right: 5px; width: 16px; height: 16px"> <b>Regenerate</b>`;
-        
+
         inputText.value = "";
         insertBtn.style.display = "inline-block";
       }, 500);
