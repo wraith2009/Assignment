@@ -61,11 +61,6 @@ Below is a video demo of the extension functionality:
 
 <video controls src="https://youtu.be/UxAei1o5vrI" width="600" />
 
-## Installation
+https://github.com/user-attachments/assets/2f275a30-176e-4ade-b06c-3471e773edcb
 
-To run the extension locally:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
