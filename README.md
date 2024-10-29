@@ -56,6 +56,7 @@ The project fulfills all criteria specified in the assignment, including:
 - **Execution Speed**: Project completed within the given timeframe.
 
 ## Demo
+[![Watch the demo](https://img.youtube.com/vi/UxAei1o5vrI/0.jpg)](https://www.youtube.com/watch?v=UxAei1o5vrI)
 
 
 
