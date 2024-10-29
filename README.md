@@ -57,10 +57,5 @@ The project fulfills all criteria specified in the assignment, including:
 
 ## Demo
 
-Below is a video demo of the extension functionality:
-
-<video controls src="https://youtu.be/UxAei1o5vrI" width="600" />
-
-https://github.com/user-attachments/assets/2f275a30-176e-4ade-b06c-3471e773edcb
 
 
